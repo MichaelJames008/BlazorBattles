@@ -10,7 +10,7 @@ namespace BlazorBattles.Client.Services
         public event Action OnChange;
 
         void BananaChanged() => OnChange.Invoke();
-        public int Bananas { get; set; }
+        public int Bananas { get; set; } = 1000;
 
         public void EatBananas(int amount)
         {
