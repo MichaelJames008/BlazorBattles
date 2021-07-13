@@ -29,6 +29,10 @@
     int selectedUnitId = 1;
     bool needMoreBananas = false;
 
+    protected override async Task OnInitializedAsync()
+    {
+        await UnitService.LoadUnitsAsync();
+    }
 
     public void BuildUnit()
     {
